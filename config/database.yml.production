@@ -6,14 +6,6 @@ default: &default
   password: 123456
   socket: /var/run/mysqld/mysqld.sock
 
-development:
-  <<: *default
-  database: lb_development
-
-test:
-  <<: *default
-  database: lb_test
-
 production:
   <<: *default
   database: lb_production
